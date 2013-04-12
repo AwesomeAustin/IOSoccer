@@ -10,4 +10,21 @@
 
 @implementation Player
 
+/*@synthesize isHomeTeam, playableCardsLeft;
+
+
+(id) initPlayer: (bool) homeTeam
+{
+    if(self = [super init])
+    {
+        self.isHomeTeam = homeTeam;
+    }
+}
+
+(Card*) playCard: (int) CardNum;
+(void) checkPlayableCards;
+(void) sortHand;
+(void) addToHand: (Card*) aCard;
+*/
+
 @end

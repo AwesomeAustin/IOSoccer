@@ -7,7 +7,20 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "card.h"
 
-@interface Player : NSObject
+@interface Player : NSObject{
+
+    NSArray *Hand;
+    bool isHomeTeam;
+    bool playableCardsLeft;
+}
+
+-(id) initPlayer: (bool) homeTeam;
+
+- (Card*) playCard: (int) CardNum;
+- (void) checkPlayableCards;
+- (void) sortHand;
+- (void) addToHand: (Card*) aCard;
 
 @end
