@@ -15,6 +15,19 @@
 	return self;
 }
 
+- (id) initAsPlayer
+{
+    if (self = [super init])
+    {
+        cards = [[NSMutableArray alloc ] init];
+        for (int i = 0; i <= 2; i++)//the number two is replaced by howevermany are needed of specific card
+        {
+            Card * card = [[Card alloc] initWithValue: header type: offense];
+            [cards addObject:card];
+        }
+    }
+}
+
 /*
  * Random sort used from this blog post
  * http://zaldzbugz.wordpress.com/2010/07/16/randomly-sort-nsarray/
@@ -29,6 +42,7 @@ int randomSort(id obj1, id obj2, void *context ) {
 
 
 - (Card *) draw {
+ 
 }
 
 - (NSInteger) cardsRemaining {
@@ -36,6 +50,8 @@ int randomSort(id obj1, id obj2, void *context ) {
 }
 
 - (NSString *) description {
+
+
 }
 
 - (void) dealloc {

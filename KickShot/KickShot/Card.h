@@ -14,18 +14,27 @@ header, endCName//fill in the rest of the cards and off cards
 } CName;
 
 typedef enum {
-    home, away, official, endCType
+    home, away, reff, endCType
 } CType;
+
+typedef enum {
+    offense, defense, official
+} PlayType;
+
+
 
 @interface Card : NSObject
 {
+
+    CType team;
     CName value;
-    CType type;
+    PlayType type;
+    
 }
 
 @property (nonatomic) CName value;
 @property (nonatomic) CType type;
 
-- (id) initWithValue:(CName) aValue type:(CType) aType;
+- (id) initWithValue:(CName) aValue type:(PlayType) aPlay;
 
 @end

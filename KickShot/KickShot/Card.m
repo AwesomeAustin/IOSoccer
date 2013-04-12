@@ -8,14 +8,17 @@
 
 #import "Card.h"
 
+
 @implementation Card
 
-@synthesize value,type;
+@synthesize value;//, type;
+//@synthesize play;
 
-- (id) initWithValue:(CName) aValue type:(CType) aType {
+
+- (id) initWithValue:(CName) aValue type:(PlayType) aPlay{
 	if(self = [super init]) {
 		self.value = aValue;
-		self.type = aType;
+        self.type = aPlay;
 	}
 	return self;
 }

@@ -18,5 +18,6 @@
 - (void) shuffle;
 - (Card *) draw;
 - (NSInteger) cardsRemaining;
-
+- (id) initAsPlayer;
+- (id) initasOfficial;
 @end

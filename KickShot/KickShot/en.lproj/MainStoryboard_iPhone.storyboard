@@ -12,7 +12,7 @@
                         <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bZ8-hO-7Rm">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="bZ8-hO-7Rm">
                                 <constraints>
                                     <constraint firstAttribute="height" constant="213" id="qQv-dl-AlY"/>
                                 </constraints>
@@ -31,12 +31,20 @@
                                     <segue destination="1n8-JT-77z" kind="modal" id="5pB-2H-vNP"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Characters.png" translatesAutoresizingMaskIntoConstraints="NO" id="ehU-75-85r">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="mdW-Qh-YpU"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.19882002022771034" green="0.70934527853260865" blue="0.14658349342904339" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="ehU-75-85r" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="3ib-c9-YqJ"/>
                             <constraint firstItem="bZ8-hO-7Rm" firstAttribute="top" secondItem="3" secondAttribute="top" constant="20" symbolic="YES" type="default" id="AS6-f4-y5v"/>
+                            <constraint firstItem="ehU-75-85r" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="Lgw-8I-skT"/>
                             <constraint firstItem="bZ8-hO-7Rm" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="default" id="OQF-ae-wfE"/>
                             <constraint firstItem="UgK-Dy-hRs" firstAttribute="top" secondItem="3" secondAttribute="top" constant="252" id="QD7-Hd-vqK"/>
+                            <constraint firstAttribute="bottom" secondItem="ehU-75-85r" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="SW8-NA-Uxq"/>
                             <constraint firstItem="UgK-Dy-hRs" firstAttribute="centerX" secondItem="bZ8-hO-7Rm" secondAttribute="centerX" type="default" id="ad5-Tl-jhq"/>
                             <constraint firstItem="bZ8-hO-7Rm" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="rjy-MD-98W"/>
                         </constraints>
@@ -197,6 +205,10 @@
             <point key="canvasLocation" x="914" y="4"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Characters.png" width="1025" height="383"/>
+        <image name="Logo.png" width="1555" height="385"/>
+    </resources>
     <classes>
         <class className="NSLayoutConstraint" superclassName="NSObject">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
