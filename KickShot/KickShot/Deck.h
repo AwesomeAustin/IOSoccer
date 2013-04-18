@@ -19,5 +19,5 @@
 - (Card *) draw;
 - (NSInteger) cardsRemaining;
 - (id) initAsPlayer;
-- (id) initasOfficial;
+- (id) initAsOfficial;
 @end

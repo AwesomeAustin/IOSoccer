@@ -15,46 +15,78 @@
 	return self;
 }
 
+//builds a deck with all the cards needed in a team deck for a warmup game
 - (id) initAsPlayer
 {
     if (self = [super init])
     {
         cards = [[NSMutableArray alloc ] init];
-        for (int i = 0; i <= 2; i++)//the number two is replaced by howevermany are needed of specific card
+        for (int i = 0; i <= 17; i++)//the warmup game require 17 pass cards
         {
-            Card * card = [[Card alloc] initWithValue: header type: offense];
+            Card * card = [[Card alloc] initWithValue: pass type: offense];
             [cards addObject:card];
         }
+        for (int i = 0; i <= 5; i++)//the warmup game require 5 shot cards from each side
+        {                            //also 5 intercepts and 5 block from each side
+            Card * card = [[Card alloc] initWithValue: goalShotRight type: offense];
+            [cards addObject:card];
+            Card * card1 = [[Card alloc] initWithValue: goalShotLeft type: offense];
+            [cards addObject:card1];
+            Card * card2 = [[Card alloc] initWithValue: intercept type: defense];
+            [cards addObject:card2];
+            Card * card3 = [[Card alloc] initWithValue: goalBlockedRight type: defense];
+            [cards addObject:card3];
+            Card * card4 = [[Card alloc] initWithValue: goalBlockedLeft type: defense];
+            [cards addObject:card4];
+        }
+    }
+    return self;
+}
+
+//builds a deck with all the official cards needed for a warmup game
+- (id) initAsOfficial
+{
+    if(self = [super init])
+    {
+        cards = [[NSMutableArray alloc ] init];
+        for (int i = 0; i <= 5; i++)//the warmup game require 5 direct free kicks and thats it
+        {
+            Card * card = [[Card alloc] initWithValue: directFreeKick type: official];
+            [cards addObject:card];
+        }
+        
+    }
+    return self;
+}
+
+
+//simple shuffle of deck
+- (void) shuffle {
+    
+    NSUInteger count = [cards count];
+    for (uint i = 0; i < count; ++i)
+    {
+        // Select a random element between i and end of array to swap with.
+        int nElements = count - i;
+        int n = arc4random_uniform(nElements) + i;
+        [cards exchangeObjectAtIndex:i withObjectAtIndex:n];
     }
 }
 
-/*
- * Random sort used from this blog post
- * http://zaldzbugz.wordpress.com/2010/07/16/randomly-sort-nsarray/
- */
-int randomSort(id obj1, id obj2, void *context ) {
-	// returns random number -1 0 1
-	return (arc4random()%3 - 1);
-}
 
-- (void) shuffle {
-}
-
-
+//copies the last card out and deletes it from the array then returns a copy
 - (Card *) draw {
+    
+    Card *temp = [cards.lastObject mutableCopy];
+    [cards removeLastObject];
+    return temp;
  
 }
 
+//returns how many objects are in the deck
 - (NSInteger) cardsRemaining {
 	return [cards count];
 }
 
-- (NSString *) description {
-
-
-}
-
-- (void) dealloc {
-}
 
 @end
