@@ -10,7 +10,7 @@
 
 
 typedef enum {
-    header, endCName//fill in the rest of the cards and off cards
+    bicycleKick, corner, directFreeKick, dribble, goalBlockedRight, goalBlockedLeft, goaliePunt, goalShotRight, goalShotLeft, header, intercept, offside, pass, penaltyKick, refThrowIn, slideTackle, throwIn, wildCard, endCName//fill in the rest of the cards and off cards
 } CName;
 
 typedef enum {

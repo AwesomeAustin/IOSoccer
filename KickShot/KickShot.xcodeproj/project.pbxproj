@@ -9,6 +9,38 @@
 /* Begin PBXBuildFile section */
 		D9040C5A17150E5900DFBC80 /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = D9040C5917150E5900DFBC80 /* Player.m */; };
 		D98B8894171E5366000ACE79 /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = D98B8893171E5366000ACE79 /* Card.m */; };
+		D990C7ED171F50B000710B17 /* BicycleKick.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D990C7DA171F50B000710B17 /* BicycleKick.jpg */; };
+		D990C7EE171F50B000710B17 /* BicycleKick2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D990C7DB171F50B000710B17 /* BicycleKick2.jpg */; };
+		D990C7EF171F50B000710B17 /* Corner.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D990C7DC171F50B000710B17 /* Corner.jpg */; };
+		D990C7F0171F50B000710B17 /* DirectFreeKick.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D990C7DD171F50B000710B17 /* DirectFreeKick.jpg */; };
+		D990C7F1171F50B000710B17 /* Dribble.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D990C7DE171F50B000710B17 /* Dribble.jpg */; };
+		D990C7F2171F50B000710B17 /* Dribble2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D990C7DF171F50B000710B17 /* Dribble2.jpg */; };
+		D990C7F3171F50B000710B17 /* GoalBlocked1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D990C7E0171F50B000710B17 /* GoalBlocked1.jpg */; };
+		D990C7F4171F50B000710B17 /* GoalBlocked2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D990C7E1171F50B000710B17 /* GoalBlocked2.jpg */; };
+		D990C7F5171F50B000710B17 /* GoalBlocked3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D990C7E2171F50B000710B17 /* GoalBlocked3.jpg */; };
+		D990C7F6171F50B000710B17 /* GoalBlocked4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D990C7E3171F50B000710B17 /* GoalBlocked4.jpg */; };
+		D990C7F7171F50B000710B17 /* GoaliePunt.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D990C7E4171F50B000710B17 /* GoaliePunt.jpg */; };
+		D990C7F8171F50B000710B17 /* GoaliePunt2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D990C7E5171F50B000710B17 /* GoaliePunt2.jpg */; };
+		D990C7F9171F50B000710B17 /* GoalShot1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D990C7E6171F50B000710B17 /* GoalShot1.jpg */; };
+		D990C7FA171F50B000710B17 /* GoalShot2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D990C7E7171F50B000710B17 /* GoalShot2.jpg */; };
+		D990C7FB171F50B000710B17 /* GoalShot3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D990C7E8171F50B000710B17 /* GoalShot3.jpg */; };
+		D990C7FC171F50B000710B17 /* GoalShot4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D990C7E9171F50B000710B17 /* GoalShot4.jpg */; };
+		D990C7FD171F50B000710B17 /* Header.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D990C7EA171F50B000710B17 /* Header.jpg */; };
+		D990C7FE171F50B000710B17 /* Header2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D990C7EB171F50B000710B17 /* Header2.jpg */; };
+		D990C80E171F50FB00710B17 /* Intercept.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D990C800171F50FB00710B17 /* Intercept.jpg */; };
+		D990C80F171F50FB00710B17 /* Intercept2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D990C801171F50FB00710B17 /* Intercept2.jpg */; };
+		D990C810171F50FB00710B17 /* Offside.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D990C802171F50FB00710B17 /* Offside.jpg */; };
+		D990C811171F50FB00710B17 /* Pass.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D990C803171F50FB00710B17 /* Pass.jpg */; };
+		D990C812171F50FB00710B17 /* Pass2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D990C804171F50FB00710B17 /* Pass2.jpg */; };
+		D990C813171F50FB00710B17 /* PenaltyKick.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D990C805171F50FB00710B17 /* PenaltyKick.jpg */; };
+		D990C814171F50FB00710B17 /* RefThrowin.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D990C806171F50FB00710B17 /* RefThrowin.jpg */; };
+		D990C815171F50FB00710B17 /* SlideTackle.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D990C807171F50FB00710B17 /* SlideTackle.jpg */; };
+		D990C816171F50FB00710B17 /* SlideTackle2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D990C808171F50FB00710B17 /* SlideTackle2.jpg */; };
+		D990C817171F50FB00710B17 /* ThrowIn.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D990C809171F50FB00710B17 /* ThrowIn.jpg */; };
+		D990C818171F50FB00710B17 /* ThrowIn2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D990C80A171F50FB00710B17 /* ThrowIn2.jpg */; };
+		D990C819171F50FB00710B17 /* WildCardRef.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D990C80B171F50FB00710B17 /* WildCardRef.jpg */; };
+		D990C81A171F50FB00710B17 /* WildCardAway.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D990C80C171F50FB00710B17 /* WildCardAway.jpg */; };
+		D990C81B171F50FB00710B17 /* WildCardHome.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D990C80D171F50FB00710B17 /* WildCardHome.jpg */; };
 		D9C76BF71702E05900AD3EC5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9C76BF61702E05900AD3EC5 /* UIKit.framework */; };
 		D9C76BF91702E05900AD3EC5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9C76BF81702E05900AD3EC5 /* Foundation.framework */; };
 		D9C76BFB1702E05900AD3EC5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9C76BFA1702E05900AD3EC5 /* CoreGraphics.framework */; };
@@ -46,6 +78,38 @@
 		D9040C5917150E5900DFBC80 /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Player.m; sourceTree = "<group>"; };
 		D98B8892171E5366000ACE79 /* Card.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Card.h; path = ../Card.h; sourceTree = "<group>"; };
 		D98B8893171E5366000ACE79 /* Card.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Card.m; path = ../Card.m; sourceTree = "<group>"; };
+		D990C7DA171F50B000710B17 /* BicycleKick.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BicycleKick.jpg; sourceTree = "<group>"; };
+		D990C7DB171F50B000710B17 /* BicycleKick2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BicycleKick2.jpg; sourceTree = "<group>"; };
+		D990C7DC171F50B000710B17 /* Corner.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Corner.jpg; sourceTree = "<group>"; };
+		D990C7DD171F50B000710B17 /* DirectFreeKick.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = DirectFreeKick.jpg; sourceTree = "<group>"; };
+		D990C7DE171F50B000710B17 /* Dribble.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Dribble.jpg; sourceTree = "<group>"; };
+		D990C7DF171F50B000710B17 /* Dribble2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Dribble2.jpg; sourceTree = "<group>"; };
+		D990C7E0171F50B000710B17 /* GoalBlocked1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = GoalBlocked1.jpg; sourceTree = "<group>"; };
+		D990C7E1171F50B000710B17 /* GoalBlocked2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = GoalBlocked2.jpg; sourceTree = "<group>"; };
+		D990C7E2171F50B000710B17 /* GoalBlocked3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = GoalBlocked3.jpg; sourceTree = "<group>"; };
+		D990C7E3171F50B000710B17 /* GoalBlocked4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = GoalBlocked4.jpg; sourceTree = "<group>"; };
+		D990C7E4171F50B000710B17 /* GoaliePunt.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = GoaliePunt.jpg; sourceTree = "<group>"; };
+		D990C7E5171F50B000710B17 /* GoaliePunt2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = GoaliePunt2.jpg; sourceTree = "<group>"; };
+		D990C7E6171F50B000710B17 /* GoalShot1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = GoalShot1.jpg; sourceTree = "<group>"; };
+		D990C7E7171F50B000710B17 /* GoalShot2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = GoalShot2.jpg; sourceTree = "<group>"; };
+		D990C7E8171F50B000710B17 /* GoalShot3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = GoalShot3.jpg; sourceTree = "<group>"; };
+		D990C7E9171F50B000710B17 /* GoalShot4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = GoalShot4.jpg; sourceTree = "<group>"; };
+		D990C7EA171F50B000710B17 /* Header.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Header.jpg; sourceTree = "<group>"; };
+		D990C7EB171F50B000710B17 /* Header2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Header2.jpg; sourceTree = "<group>"; };
+		D990C800171F50FB00710B17 /* Intercept.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Intercept.jpg; sourceTree = "<group>"; };
+		D990C801171F50FB00710B17 /* Intercept2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Intercept2.jpg; sourceTree = "<group>"; };
+		D990C802171F50FB00710B17 /* Offside.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Offside.jpg; sourceTree = "<group>"; };
+		D990C803171F50FB00710B17 /* Pass.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Pass.jpg; sourceTree = "<group>"; };
+		D990C804171F50FB00710B17 /* Pass2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Pass2.jpg; sourceTree = "<group>"; };
+		D990C805171F50FB00710B17 /* PenaltyKick.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = PenaltyKick.jpg; sourceTree = "<group>"; };
+		D990C806171F50FB00710B17 /* RefThrowin.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = RefThrowin.jpg; sourceTree = "<group>"; };
+		D990C807171F50FB00710B17 /* SlideTackle.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SlideTackle.jpg; sourceTree = "<group>"; };
+		D990C808171F50FB00710B17 /* SlideTackle2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SlideTackle2.jpg; sourceTree = "<group>"; };
+		D990C809171F50FB00710B17 /* ThrowIn.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ThrowIn.jpg; sourceTree = "<group>"; };
+		D990C80A171F50FB00710B17 /* ThrowIn2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ThrowIn2.jpg; sourceTree = "<group>"; };
+		D990C80B171F50FB00710B17 /* WildCardRef.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WildCardRef.jpg; sourceTree = "<group>"; };
+		D990C80C171F50FB00710B17 /* WildCardAway.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WildCardAway.jpg; sourceTree = "<group>"; };
+		D990C80D171F50FB00710B17 /* WildCardHome.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WildCardHome.jpg; sourceTree = "<group>"; };
 		D9C76BF31702E05900AD3EC5 /* KickShot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KickShot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9C76BF61702E05900AD3EC5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		D9C76BF81702E05900AD3EC5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -152,15 +216,47 @@
 		D9C76BFD1702E05900AD3EC5 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D990C7DA171F50B000710B17 /* BicycleKick.jpg */,
+				D990C7DB171F50B000710B17 /* BicycleKick2.jpg */,
+				D990C7DC171F50B000710B17 /* Corner.jpg */,
+				D990C7DD171F50B000710B17 /* DirectFreeKick.jpg */,
+				D990C7DE171F50B000710B17 /* Dribble.jpg */,
+				D990C7DF171F50B000710B17 /* Dribble2.jpg */,
+				D990C7E0171F50B000710B17 /* GoalBlocked1.jpg */,
+				D990C7E1171F50B000710B17 /* GoalBlocked2.jpg */,
+				D990C7E2171F50B000710B17 /* GoalBlocked3.jpg */,
+				D990C7E3171F50B000710B17 /* GoalBlocked4.jpg */,
+				D990C7E4171F50B000710B17 /* GoaliePunt.jpg */,
+				D990C7E5171F50B000710B17 /* GoaliePunt2.jpg */,
+				D990C7E6171F50B000710B17 /* GoalShot1.jpg */,
+				D990C7E7171F50B000710B17 /* GoalShot2.jpg */,
+				D990C7E8171F50B000710B17 /* GoalShot3.jpg */,
+				D990C7E9171F50B000710B17 /* GoalShot4.jpg */,
+				D990C7EA171F50B000710B17 /* Header.jpg */,
+				D990C7EB171F50B000710B17 /* Header2.jpg */,
+				D990C800171F50FB00710B17 /* Intercept.jpg */,
+				D990C801171F50FB00710B17 /* Intercept2.jpg */,
+				D990C802171F50FB00710B17 /* Offside.jpg */,
+				D990C803171F50FB00710B17 /* Pass.jpg */,
+				D990C804171F50FB00710B17 /* Pass2.jpg */,
+				D990C805171F50FB00710B17 /* PenaltyKick.jpg */,
+				D990C806171F50FB00710B17 /* RefThrowin.jpg */,
+				D990C807171F50FB00710B17 /* SlideTackle.jpg */,
+				D990C808171F50FB00710B17 /* SlideTackle2.jpg */,
+				D990C809171F50FB00710B17 /* ThrowIn.jpg */,
+				D990C80A171F50FB00710B17 /* ThrowIn2.jpg */,
+				D990C80B171F50FB00710B17 /* WildCardRef.jpg */,
+				D990C80C171F50FB00710B17 /* WildCardAway.jpg */,
+				D990C80D171F50FB00710B17 /* WildCardHome.jpg */,
+				D9C76C021702E05900AD3EC5 /* main.m */,
+				D9C76C041702E05900AD3EC5 /* KickShot-Prefix.pch */,
+				D9C76BFE1702E05900AD3EC5 /* KickShot-Info.plist */,
 				D9FD71C6171A319100D50270 /* AwayPitch.png */,
 				D9FD71C7171A319100D50270 /* Characters.png */,
 				D9FD71C8171A319100D50270 /* HomePitch.png */,
 				D9FD71C9171A319100D50270 /* icon.png */,
 				D9FD71CA171A319100D50270 /* Logo.png */,
-				D9C76BFE1702E05900AD3EC5 /* KickShot-Info.plist */,
 				D9C76BFF1702E05900AD3EC5 /* InfoPlist.strings */,
-				D9C76C021702E05900AD3EC5 /* main.m */,
-				D9C76C041702E05900AD3EC5 /* KickShot-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -263,6 +359,38 @@
 				D9FD71CD171A319100D50270 /* HomePitch.png in Resources */,
 				D9FD71CE171A319100D50270 /* icon.png in Resources */,
 				D9FD71CF171A319100D50270 /* Logo.png in Resources */,
+				D990C7ED171F50B000710B17 /* BicycleKick.jpg in Resources */,
+				D990C7EE171F50B000710B17 /* BicycleKick2.jpg in Resources */,
+				D990C7EF171F50B000710B17 /* Corner.jpg in Resources */,
+				D990C7F0171F50B000710B17 /* DirectFreeKick.jpg in Resources */,
+				D990C7F1171F50B000710B17 /* Dribble.jpg in Resources */,
+				D990C7F2171F50B000710B17 /* Dribble2.jpg in Resources */,
+				D990C7F3171F50B000710B17 /* GoalBlocked1.jpg in Resources */,
+				D990C7F4171F50B000710B17 /* GoalBlocked2.jpg in Resources */,
+				D990C7F5171F50B000710B17 /* GoalBlocked3.jpg in Resources */,
+				D990C7F6171F50B000710B17 /* GoalBlocked4.jpg in Resources */,
+				D990C7F7171F50B000710B17 /* GoaliePunt.jpg in Resources */,
+				D990C7F8171F50B000710B17 /* GoaliePunt2.jpg in Resources */,
+				D990C7F9171F50B000710B17 /* GoalShot1.jpg in Resources */,
+				D990C7FA171F50B000710B17 /* GoalShot2.jpg in Resources */,
+				D990C7FB171F50B000710B17 /* GoalShot3.jpg in Resources */,
+				D990C7FC171F50B000710B17 /* GoalShot4.jpg in Resources */,
+				D990C7FD171F50B000710B17 /* Header.jpg in Resources */,
+				D990C7FE171F50B000710B17 /* Header2.jpg in Resources */,
+				D990C80E171F50FB00710B17 /* Intercept.jpg in Resources */,
+				D990C80F171F50FB00710B17 /* Intercept2.jpg in Resources */,
+				D990C810171F50FB00710B17 /* Offside.jpg in Resources */,
+				D990C811171F50FB00710B17 /* Pass.jpg in Resources */,
+				D990C812171F50FB00710B17 /* Pass2.jpg in Resources */,
+				D990C813171F50FB00710B17 /* PenaltyKick.jpg in Resources */,
+				D990C814171F50FB00710B17 /* RefThrowin.jpg in Resources */,
+				D990C815171F50FB00710B17 /* SlideTackle.jpg in Resources */,
+				D990C816171F50FB00710B17 /* SlideTackle2.jpg in Resources */,
+				D990C817171F50FB00710B17 /* ThrowIn.jpg in Resources */,
+				D990C818171F50FB00710B17 /* ThrowIn2.jpg in Resources */,
+				D990C819171F50FB00710B17 /* WildCardRef.jpg in Resources */,
+				D990C81A171F50FB00710B17 /* WildCardAway.jpg in Resources */,
+				D990C81B171F50FB00710B17 /* WildCardHome.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
