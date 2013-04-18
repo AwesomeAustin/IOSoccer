@@ -41,6 +41,7 @@
 		D990C819171F50FB00710B17 /* WildCardRef.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D990C80B171F50FB00710B17 /* WildCardRef.jpg */; };
 		D990C81A171F50FB00710B17 /* WildCardAway.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D990C80C171F50FB00710B17 /* WildCardAway.jpg */; };
 		D990C81B171F50FB00710B17 /* WildCardHome.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D990C80D171F50FB00710B17 /* WildCardHome.jpg */; };
+		D99813AE172098340011D418 /* Game.m in Sources */ = {isa = PBXBuildFile; fileRef = D99813AD172098340011D418 /* Game.m */; };
 		D9C76BF71702E05900AD3EC5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9C76BF61702E05900AD3EC5 /* UIKit.framework */; };
 		D9C76BF91702E05900AD3EC5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9C76BF81702E05900AD3EC5 /* Foundation.framework */; };
 		D9C76BFB1702E05900AD3EC5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9C76BFA1702E05900AD3EC5 /* CoreGraphics.framework */; };
@@ -110,6 +111,8 @@
 		D990C80B171F50FB00710B17 /* WildCardRef.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WildCardRef.jpg; sourceTree = "<group>"; };
 		D990C80C171F50FB00710B17 /* WildCardAway.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WildCardAway.jpg; sourceTree = "<group>"; };
 		D990C80D171F50FB00710B17 /* WildCardHome.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WildCardHome.jpg; sourceTree = "<group>"; };
+		D99813AC172098340011D418 /* Game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Game.h; sourceTree = "<group>"; };
+		D99813AD172098340011D418 /* Game.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Game.m; sourceTree = "<group>"; };
 		D9C76BF31702E05900AD3EC5 /* KickShot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KickShot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9C76BF61702E05900AD3EC5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		D9C76BF81702E05900AD3EC5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -209,6 +212,8 @@
 				D9D3EE40170F97C4009B5938 /* Deck.m */,
 				D9040C5817150E5900DFBC80 /* Player.h */,
 				D9040C5917150E5900DFBC80 /* Player.m */,
+				D99813AC172098340011D418 /* Game.h */,
+				D99813AD172098340011D418 /* Game.m */,
 			);
 			path = KickShot;
 			sourceTree = "<group>";
@@ -431,6 +436,7 @@
 				D9D3EE41170F97C4009B5938 /* Deck.m in Sources */,
 				D9040C5A17150E5900DFBC80 /* Player.m in Sources */,
 				D98B8894171E5366000ACE79 /* Card.m in Sources */,
+				D99813AE172098340011D418 /* Game.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
