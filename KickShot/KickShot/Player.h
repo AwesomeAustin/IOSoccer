@@ -11,15 +11,18 @@
 
 @interface Player : NSObject{
 
-    NSArray *Hand;
+    NSMutableArray *Hand;
     bool isHomeTeam;
     bool playableCardsLeft;
 }
 
+@property (nonatomic) bool isHomeTeam;
+@property (nonatomic) bool playableCardsLeft;
+
 -(id) initPlayer: (bool) homeTeam;
 
 - (Card*) playCard: (int) CardNum;
-- (void) checkPlayableCards;
+- (void) checkPlayableCards: (int) possesion;
 - (void) sortHand;
 - (void) addToHand: (Card*) aCard;
 
