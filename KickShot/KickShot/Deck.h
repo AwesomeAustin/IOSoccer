@@ -18,6 +18,6 @@
 - (void) shuffle;
 - (Card *) draw;
 - (NSInteger) cardsRemaining;
-- (id) initAsPlayer;
+- (id) initAsPlayer: (CType) dTeam;
 - (id) initAsOfficial;
 @end

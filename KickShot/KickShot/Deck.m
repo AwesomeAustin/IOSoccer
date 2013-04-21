@@ -16,7 +16,7 @@
 }
 
 //builds a deck with all the cards needed in a team deck for a warmup game
-- (id) initAsPlayer
+- (id) initAsPlayer: (CType) dTeam
 {
     if (self = [super init])
     {
@@ -24,19 +24,25 @@
         for (int i = 0; i <= 17; i++)//the warmup game require 17 pass cards
         {
             Card * card = [[Card alloc] initWithValue: pass type: offense];
+            card.team = dTeam;
             [cards addObject:card];
         }
         for (int i = 0; i <= 5; i++)//the warmup game require 5 shot cards from each side
         {                            //also 5 intercepts and 5 block from each side
             Card * card = [[Card alloc] initWithValue: goalShotRight type: offense];
+            card.team = dTeam;
             [cards addObject:card];
             Card * card1 = [[Card alloc] initWithValue: goalShotLeft type: offense];
+            card.team = dTeam;
             [cards addObject:card1];
             Card * card2 = [[Card alloc] initWithValue: intercept type: defense];
+            card.team = dTeam;
             [cards addObject:card2];
             Card * card3 = [[Card alloc] initWithValue: goalBlockedRight type: defense];
+            card.team = dTeam;
             [cards addObject:card3];
             Card * card4 = [[Card alloc] initWithValue: goalBlockedLeft type: defense];
+            card.team = dTeam;
             [cards addObject:card4];
         }
     }
@@ -52,6 +58,7 @@
         for (int i = 0; i <= 5; i++)//the warmup game require 5 direct free kicks and thats it
         {
             Card * card = [[Card alloc] initWithValue: directFreeKick type: official];
+            card.team = reff;
             [cards addObject:card];
         }
         
