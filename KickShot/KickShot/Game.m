@@ -39,27 +39,98 @@
     //need to check move validity before doing it in another function in player
     Card * temp = [ActivePlayer playCard:activeCard];
     bool tempOfficialCardPlayed = false;
+    int die1, die2;
+    die1 = (rand()%5)+1;
+    die2 = (rand()%5)+1;
+    
     switch (temp.value) {
         case pass:
-            //do pass stuff
+            //roll two die go higher number
+            //if either are a one its a turn over
+            if (die1 == 1 || die2 == 1)
+                isHomeBall = !isHomeBall;//turn over
+            else
+            {
+                if(die1 > die2)
+                {
+                    if(isHomeBall == true)
+                        ballPosition += die1;
+                    else
+                        ballPosition -= die1;
+                }
+                else
+                {
+                    if(isHomeBall == true)
+                        ballPosition += die2;
+                    else
+                        ballPosition -= die2;//add in score possibility
+                }
+            }
             break;
         case goalShotRight:
-            //
+            //roll both if sum gets to goal than possible score
+            //if not countered, otherwise a turn over
             break;
         case goalShotLeft:
-            //
+            //ditto
             break;
         case intercept:
-            //
+            //roll both die get ball on all except snake eyes
+            if(die1 > 1 || die2 > 1)
+                isHomeBall = !isHomeBall; // turn over nothing happens otherwise
             break;
         case goalBlockedRight:
-            //
+            //if correct side ball gets turned over, else other team score starts
+            //with kick from midfield
             break;
         case goalBlockedLeft:
-            //
+            //ditto
             break;
         case directFreeKick:
-            //
+            //roll best of two get a one on either die its a turn over
+            if((ActivePlayer == Player1 && isHomeBall)||(ActivePlayer == Player2 && !isHomeBall))//if played by offense
+            {
+                if (die1 == 1 || die2 == 1)
+                    isHomeBall = !isHomeBall;//turn over
+                else
+                {
+                    if(die1 > die2)
+                    {
+                        if(isHomeBall == true)
+                            ballPosition += die1;
+                        else
+                            ballPosition -= die1;
+                    }
+                    else
+                    {
+                        if(isHomeBall == true)
+                            ballPosition += die2;
+                        else
+                            ballPosition -= die2;//add in score possibility
+                    }
+                }
+            }
+            else//played by defense
+            {
+                if (die1 != 1 && die2 != 1)
+                {
+                    isHomeBall = !isHomeBall;//turn over
+                    if(die1 > die2)
+                    {
+                        if(isHomeBall == true)
+                            ballPosition += die1;
+                        else
+                            ballPosition -= die1;
+                    }
+                    else
+                    {
+                        if(isHomeBall == true)
+                            ballPosition += die2;
+                        else
+                            ballPosition -= die2;//add in score possibility
+                    }
+                }
+            }
             tempOfficialCardPlayed = true;
             break;
             //add more in to finish for each card listed in enum CName
@@ -75,7 +146,10 @@
         }
         else
         {
-            [ActivePlayer addToHand:oDeck.draw];
+            if(oDeck.cardsRemaining == 0)
+                [ActivePlayer addToHand:hDeck.draw];
+            else
+                [ActivePlayer addToHand:oDeck.draw];
         }
         [ActivePlayer sortHand];
         ActivePlayer = Player2;
@@ -88,6 +162,9 @@
         }
         else
         {
+            if(oDeck.cardsRemaining == 0)
+                [ActivePlayer addToHand:aDeck.draw];
+            else
             [ActivePlayer addToHand:oDeck.draw];
         }
         [ActivePlayer sortHand];
