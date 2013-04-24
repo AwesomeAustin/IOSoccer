@@ -19,6 +19,7 @@
     NSInteger hScore, aScore;
     NSInteger activeCard;
     bool isHomeBall;
+    bool shotRightTaken, shotLeftTaken;
     
 }
 
@@ -26,6 +27,9 @@
 @property (nonatomic) NSInteger hScore, aScore;
 @property (nonatomic) NSInteger activeCard;
 @property (nonatomic) bool isHomeBall;
+@property (nonatomic) bool shotRightTaken;
+@property (nonatomic) bool shotLeftTaken;
+
 
 - (id) init;
 - (void) playActive;
