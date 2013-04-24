@@ -25,5 +25,6 @@
 - (void) checkPlayableCards: (int) possesion;
 - (void) sortHand;
 - (void) addToHand: (Card*) aCard;
+- (NSInteger) cardsRemaining;
 
 @end

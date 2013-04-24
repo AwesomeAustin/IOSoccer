@@ -72,4 +72,9 @@
     [Hand addObject:aCard];
 }
 
+- (NSInteger) cardsRemaining
+{
+    return Hand.count;
+}
+
 @end
