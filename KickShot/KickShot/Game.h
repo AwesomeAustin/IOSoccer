@@ -20,8 +20,12 @@
     NSInteger activeCard;
     bool isHomeBall;
     bool shotRightTaken, shotLeftTaken;
+    bool Player1Active;
+    
+    int roll1, roll2;
     
 }
+
 
 @property (nonatomic) NSInteger ballPosition;
 @property (nonatomic) NSInteger hScore, aScore;
@@ -29,10 +33,20 @@
 @property (nonatomic) bool isHomeBall;
 @property (nonatomic) bool shotRightTaken;
 @property (nonatomic) bool shotLeftTaken;
-
+@property (nonatomic) bool Player1Active;
+@property (nonatomic) int roll1, roll2;
 
 - (id) init;
 - (void) playActive;
-- (void) checkWin;
+- (void) skipTurn;
+- (bool) checkWin;
+
+- (int) hDeck:(int)number;
+- (int) aDeck:(int)number;
+- (int) oDeck:(int)number;
+
+- (int) hDeckRemaining;
+- (int) aDeckRemaining;
+- (int) oDeckRemaining;
 
 @end

@@ -18,6 +18,10 @@
     if(self = [super init])
     {
         self.isHomeTeam = homeTeam;
+        /*Card*temp = [[Card alloc] initWithValue:pass type:offense];
+        [Hand addObject:temp];
+        NSLog(@"now there are %lu cards",(unsigned long)[Hand count]);
+        */
     }
     return self;
 }
@@ -34,23 +38,25 @@
 //should only take one pass to put the card in the right place
 - (void) sortHand
 {
-    Card *temp1, *temp2;
-    int change = 1;
-    while(change > 0)
+    if(Hand.count > 1)//no need to sort one card
     {
-        change = 0;
-        for ( int i = 0 ; i < ([Hand count] -1 ); i++ )
+        Card *temp1, *temp2;
+        int change = 1;
+        while(change > 0)
         {
-            temp1 = [Hand objectAtIndex:i];
-            temp2 = [Hand objectAtIndex:(i+1)];
-            if(temp1.value > temp2.value)
+            change = 0;
+            for ( int i = 0 ; i < ([Hand count] -1 ); i++ )
             {
-                [Hand exchangeObjectAtIndex:i withObjectAtIndex:(i+1)];
-                change++;
+                temp1 = [Hand objectAtIndex:i];
+                temp2 = [Hand objectAtIndex:(i+1)];
+                if(temp1.value > temp2.value)
+                {
+                    [Hand exchangeObjectAtIndex:i withObjectAtIndex:(i+1)];
+                    change++;
+                }
             }
         }
     }
-    
 }
 
 - (void) checkPlayableCards: (int) possesion
@@ -69,10 +75,17 @@
 
 - (void) addToHand: (Card*) aCard
 {
-    [Hand addObject:aCard];
+    Card *temp = [[Card alloc]init];
+    temp.value = aCard.value;
+    temp.type = aCard.type;
+    temp.team = aCard.team;
+    NSLog(@"card value %u",aCard.value);
+    NSLog(@"new card value %u",temp.value);
+    [Hand addObject:temp];
+    NSLog(@"now has a hand of size %i",[Hand count]);
 }
 
-- (NSInteger) cardsRemaining
+- (int) cardsRemaining
 {
     return Hand.count;
 }

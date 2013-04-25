@@ -21,13 +21,13 @@
     if (self = [super init])
     {
         cards = [[NSMutableArray alloc ] init];
-        for (int i = 0; i <= 17; i++)//the warmup game require 17 pass cards
+        for (int i = 0; i < 17; i++)//the warmup game require 17 pass cards
         {
             Card * card = [[Card alloc] initWithValue: pass type: offense];
             card.team = dTeam;
             [cards addObject:card];
         }
-        for (int i = 0; i <= 5; i++)//the warmup game require 5 shot cards from each side
+        for (int i = 0; i < 5; i++)//the warmup game require 5 shot cards from each side
         {                            //also 5 intercepts and 5 block from each side
             Card * card = [[Card alloc] initWithValue: goalShotRight type: offense];
             card.team = dTeam;
@@ -45,6 +45,7 @@
             card.team = dTeam;
             [cards addObject:card4];
         }
+        [self shuffle];
     }
     return self;
 }
@@ -55,13 +56,13 @@
     if(self = [super init])
     {
         cards = [[NSMutableArray alloc ] init];
-        for (int i = 0; i <= 5; i++)//the warmup game require 5 direct free kicks and thats it
+        for (int i = 0; i < 5; i++)//the warmup game require 5 direct free kicks and thats it
         {
             Card * card = [[Card alloc] initWithValue: directFreeKick type: official];
             card.team = reff;
             [cards addObject:card];
         }
-        
+        [self shuffle];
     }
     return self;
 }
@@ -84,10 +85,21 @@
 //copies the last card out and deletes it from the array then returns a copy
 - (Card *) draw {
     
-    Card *temp = [cards.lastObject mutableCopy];
+    Card * temp2 = [cards lastObject];
+    Card *temp = [[Card alloc]initWithValue:temp2.value type:temp2.type];
+    temp.team = temp2.team;
     [cards removeLastObject];
     return temp;
  
+}
+
+- (Card * ) drawFromIndex:(int)number
+{
+    Card * temp2 = [cards objectAtIndex:number];
+    Card *temp = [[Card alloc]initWithValue:temp2.value type:temp2.type];
+    temp.team = temp2.team;
+    [cards removeObjectAtIndex:number];
+    return temp;
 }
 
 //returns how many objects are in the deck
@@ -95,5 +107,15 @@
 	return [cards count];
 }
 
+- (int) cardAtIndex: (int)number
+{
+    Card * temp = [cards objectAtIndex:number];
+    return temp.value;
+}
+
+- (void) removeAtIndex:(int)number
+{
+    [cards removeObjectAtIndex:number];
+}
 
 @end

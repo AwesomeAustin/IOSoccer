@@ -20,4 +20,9 @@
 - (NSInteger) cardsRemaining;
 - (id) initAsPlayer: (CType) dTeam;
 - (id) initAsOfficial;
+
+- (int) cardAtIndex: (int)number;
+- (void) removeAtIndex: (int) number;
+- (Card *) drawFromIndex: (int)number;
+
 @end

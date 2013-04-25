@@ -11,6 +11,7 @@
 
 @interface Player : NSObject{
 
+@private
     NSMutableArray *Hand;
     bool isHomeTeam;
     bool playableCardsLeft;
@@ -25,6 +26,6 @@
 - (void) checkPlayableCards: (int) possesion;
 - (void) sortHand;
 - (void) addToHand: (Card*) aCard;
-- (NSInteger) cardsRemaining;
+- (int) cardsRemaining;
 
 @end
