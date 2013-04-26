@@ -308,46 +308,6 @@
         <image name="HomePitch.png" width="1591" height="1024"/>
         <image name="Logo.png" width="1555" height="385"/>
     </resources>
-    <classes>
-        <class className="NSLayoutConstraint" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
-        </class>
-        <class className="ViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="EndButton:" candidateClass="UIButton"/>
-                <relationship kind="action" name="PlayButton:" candidateClass="UIButton"/>
-                <relationship kind="action" name="PlayCardButton:" candidateClass="UIButton"/>
-                <relationship kind="action" name="SkipButton:" candidateClass="UIButton"/>
-                <relationship kind="action" name="SwipeLeftGesture:" candidateClass="UISwipeGestureRecognizer"/>
-                <relationship kind="action" name="SwipeRightGesture:" candidateClass="UISwipeGestureRecognizer"/>
-                <relationship kind="outlet" name="AwayPitch" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="CenterCard" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="EndButtonQualities" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="EndGameButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="HomePitch" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="LeftCard" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="MainLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="RightCard" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="WinLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="aGBLeft" candidateClass="UIImage"/>
-                <relationship kind="outlet" name="aGBRight" candidateClass="UIImage"/>
-                <relationship kind="outlet" name="aGSLeft" candidateClass="UIImage"/>
-                <relationship kind="outlet" name="aGSRight" candidateClass="UIImage"/>
-                <relationship kind="outlet" name="aIntercept" candidateClass="UIImage"/>
-                <relationship kind="outlet" name="aPass" candidateClass="UIImage"/>
-                <relationship kind="outlet" name="aScoreLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="hGBLeft" candidateClass="UIImage"/>
-                <relationship kind="outlet" name="hGBRight" candidateClass="UIImage"/>
-                <relationship kind="outlet" name="hGSLeft" candidateClass="UIImage"/>
-                <relationship kind="outlet" name="hGSRight" candidateClass="UIImage"/>
-                <relationship kind="outlet" name="hIntercept" candidateClass="UIImage"/>
-                <relationship kind="outlet" name="hPass" candidateClass="UIImage"/>
-                <relationship kind="outlet" name="hScoreLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="oDirectFreeKick" candidateClass="UIImage"/>
-            </relationships>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

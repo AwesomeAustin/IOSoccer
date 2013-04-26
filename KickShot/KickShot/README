@@ -1,0 +1,10 @@
+Dear Whoever got stuck finishing this project
+
+Upon inspection of this code you will most undoubtedly find that it doesn't perfectly match the design proposed and modeled out in the design documents.  Namely that the Player class is not being used to its intended potential.  The player uses an NSMutableArray to manage its hand of cards which is supposed to be able to add objects easily as in the Deck class, for some reason unbeknownst to me it failed to react or work as it was supposed to, specificaly in adding cards to the hand.
+To make the game work for expo I made it instead simply use the top cards on the deck as its hand.  This is something the android team from the first semester used and has considerable drawbacks.  Namely that you can not have more than one player per team or they will be shareing the same hand. Also since there is only one officials deck they both read off it to get thier officials cards and hence share a communal set of officials cards making it so that if one player uses more than three official cards(in warmup game) the other player no longer even gets to use the two that were originally in thier hand.
+I have left all the original points in there that used the players hand acordingly in the game class, they had not been put into the view coontroller yet so those will have to be changed, but besides that all should be commented out and others that are there only for drawing from the deck have been marked with comments as well.  Hopefully this will aid you in transfering it back to a model that works for more players to be able to use.
+The final point is about the code itself.  Currently it is stored in a GitHub repo and i can make that avaliable to you if you dont simply wish to make a new repo and add the code in from whatever source it was provided to you in.  Just try and contact me early enough so that you don't get hung up on that as an excuse why you're not working.
+
+Best of Luck,
+ - Austin Enfield
+  - austin.k.enfield@gmail.com

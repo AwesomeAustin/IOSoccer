@@ -26,10 +26,8 @@
         hDeck = [[Deck alloc]initAsPlayer:home];
         aDeck = [[Deck alloc]initAsPlayer:away];
         oDeck = [[Deck alloc]initAsOfficial];
-        NSLog(@"hDeck has %ld cards", (long)hDeck.cardsRemaining);
         Player1 = [[Player alloc]initPlayer:true];
         Player2 = [[Player alloc]initPlayer:false];
-        NSLog(@"player two has %ld cards",(long)Player2.cardsRemaining);
         ActivePlayer = Player1;
         Player1Active = true; //remove when hands implemented
         ballPosition = 0;
@@ -46,8 +44,6 @@
         [Player1 addToHand:oDeck.draw];
         [Player2 addToHand:oDeck.draw];
         [Player2 addToHand:oDeck.draw];
-        NSLog(@"hDeck has %ld cards", (long)hDeck.cardsRemaining);
-        NSLog(@"player one has %ld cards",(long)Player1.cardsRemaining);
         */
         roll1 = roll2 = 0;
     }
@@ -57,8 +53,6 @@
 //action taken anytime that the play card button it hit
 - (void) playActive
 {
-    NSLog(@"in the active play function");
-    //need to check move validity before doing it in another function in player
     //Card * temp = [ActivePlayer playCard:activeCard];
     Card * temp;
     if(ActivePlayer == Player1)
@@ -125,13 +119,11 @@
     die1 = (rand()%5)+1;
     die2 = (rand()%5)+1;
     roll1 = die1;
-    roll2 = die2;
+    roll2 = die2;//could be used to replace local die1, die2, put in to display rolls
     
-    NSLog(@"built everything fine error must be in the logic");
     
     if (shotRightTaken || shotLeftTaken)//if shot was taken
     {
-        NSLog(@"better not be getting in here");
         if (temp.value == goalBlockedRight)
         {
             if(shotRightTaken)//proper block
@@ -141,7 +133,6 @@
                 {
                     ballPosition = -12 + die1 + die2;
                     //[ActivePlayer addToHand:hDeck.draw];
-                    //[hDeck removeAtIndex:activeCard];//remove when hand implemented
                     ActivePlayer = Player2;
                     Player1Active = false;//remove when hand implemented
                 }
@@ -149,7 +140,6 @@
                 {
                     ballPosition = 12 - die1 - die2;
                     //[ActivePlayer addToHand:aDeck.draw];
-                    //[aDeck removeAtIndex:activeCard];//remove when hand implemented
                     ActivePlayer = Player1;
                     Player1Active = true;//remove when hand implemented
                 }
@@ -162,14 +152,12 @@
                     aScore++;
                     ballPosition = 0 + die1 + die2;
                     //[ActivePlayer addToHand:hDeck.draw];
-                    //[hDeck removeAtIndex:activeCard];//remove when hand implemented
                 }
                 else
                 {
                     hScore++;
                     ballPosition = 0 - die1 - die2;
                     //[ActivePlayer addToHand:aDeck.draw];
-                    //[aDeck removeAtIndex:activeCard];//remove when hand implemented
                 }
             }
         }
@@ -182,7 +170,6 @@
                 {
                     ballPosition = -12 + die1 + die2;
                     //[ActivePlayer addToHand:hDeck.draw];
-                    //[hDeck removeAtIndex:activeCard];//remove when hand implemented
                     ActivePlayer = Player2;
                     Player1Active = false;//remove when hand implemented
                 }
@@ -190,7 +177,6 @@
                 {
                     ballPosition = 12 - die1 - die2;
                     //[ActivePlayer addToHand:aDeck.draw];
-                    //[aDeck removeAtIndex:activeCard];//remove when hand implemented
                     ActivePlayer = Player1;
                     Player1Active = true;//remove when hand implemented
                 }
@@ -203,14 +189,12 @@
                     hScore++;
                     ballPosition = 0 + die1 + die2;
                     //[ActivePlayer addToHand:hDeck.draw];
-                    //[hDeck removeAtIndex:activeCard];//remove when hand implemented
                 }
                 else
                 {
                     aScore++;
                     ballPosition = 0 - die1 - die2;
                     //[ActivePlayer addToHand:aDeck.draw];
-                    //[hDeck removeAtIndex:activeCard];//remove when hand implemented
                 }
             }
         }
@@ -234,11 +218,9 @@
     }
     else
     {
-        NSLog(@"did it get to the switch statement?");
         switch (temp.value)
         {
             case pass:
-                NSLog(@"perhaps a pass");
                 //roll two die go higher number
                 //if either are a one its a turn over
                 if ((ActivePlayer == Player1 && isHomeBall)||
@@ -273,7 +255,6 @@
                 //can not score off pass in warmup game
                 break;
             case goalShotRight:
-                NSLog(@"or a shot right");
                 //roll both if sum gets to goal than possible score
                 //if not countered, otherwise a turn over
                 if ((ActivePlayer == Player1 && isHomeBall)||
@@ -307,7 +288,6 @@
                 }
                 break;
             case goalShotLeft:
-                NSLog(@"shot left");
                 //roll both if sum gets to goal than possible score
                 //if not countered, otherwise a turn over
                 if ((ActivePlayer == Player1 && isHomeBall)||
@@ -341,7 +321,6 @@
                 }
                 break;
             case intercept:
-                NSLog(@"an intercept");
                 //roll both die get ball on all except snake eyes
                 if ((ActivePlayer == Player1 && !isHomeBall)||
                     (ActivePlayer == Player2 && isHomeBall))
@@ -352,16 +331,13 @@
                 }
                 break;
             case goalBlockedRight:
-                NSLog(@"Goal Block R");
                 //if correct side ball gets turned over, else other team score starts
                 //with kick from midfield
                 break;
             case goalBlockedLeft:
-                NSLog(@"Goal block L");
                 //ditto
                 break;
             case directFreeKick:
-                NSLog(@"direct free kick");
                 //roll best of two get a one on either die its a turn over
                 if((ActivePlayer == Player1 && isHomeBall)||
                    (ActivePlayer == Player2 && !isHomeBall))//if played by offense
@@ -422,60 +398,46 @@
                 break;
                 //add more in to finish for each card listed in enum CName
             default:
-                NSLog(@"in default for some reason");
                 //have it point out that a blank card was played
                 break;
         }
-        NSLog(@"made it out of switch");
         if (ActivePlayer == Player1)
         {
-            NSLog(@"made it in first if");
             if(tempOfficialCardPlayed == false)
             {
-                NSLog(@"made it in second if");
                 //[ActivePlayer addToHand:hDeck.draw];
-                //[hDeck removeAtIndex:activeCard];//remove when hand implemented
             }
             else
             {
-                NSLog(@"error in the else part?");
                 if(oDeck.cardsRemaining == 0)
                 {
                     //[ActivePlayer addToHand:hDeck.draw];
-                    //[aDeck removeAtIndex:activeCard];//remove when hand implemented
                 }
                 else
                 {
                     //[ActivePlayer addToHand:oDeck.draw];
-                    //[oDeck removeAtIndex:0];//remove when hand implemented
                 }
                 tempOfficialCardPlayed = false;
-                NSLog(@"error not in else part");
             }
             [ActivePlayer sortHand];
-            NSLog(@"sorted switching player");
             ActivePlayer = Player2;
             Player1Active = false;//remove when hand implemented
-            NSLog(@"switched player");
         }
         else
         {
             if(tempOfficialCardPlayed == false)
             {
                 //[ActivePlayer addToHand:aDeck.draw];
-                //[aDeck removeAtIndex:activeCard];//remove when hand implemented
             }
             else
             {
                 if(oDeck.cardsRemaining == 0)
                 {
                     //[ActivePlayer addToHand:aDeck.draw];
-                    //[aDeck removeAtIndex:activeCard];//remove when hand implemented
                 }
                 else
                 {
                     //[ActivePlayer addToHand:oDeck.draw];
-                    //[oDeck removeAtIndex:0];//remove when hand implemented
                 }
                 tempOfficialCardPlayed = false;
             }
@@ -484,9 +446,7 @@
             Player1Active = true;//remove when hand implemented
         }
     }
-    NSLog(@"about to chck win");
     [self checkWin];
-    NSLog(@"finished play function");
 }
 
 //if the player wishes to skip thier turn
@@ -504,26 +464,13 @@
     }
 }
 //checks for an endgame status
+//probably more aptley named checkEndStatus
 - (bool) checkWin
 {
     //if (Player1.cardsRemaining < 7 && Player2.cardsRemaining < 7)
     if(hDeck.cardsRemaining < 7 && aDeck.cardsRemaining < 7)
     {
-        /* handled by the view controller once end status is achieved
-        if(hScore > aScore)
-            {
-                //do action for home win
-            }
-            else if (aScore > hScore)
-            {
-                //do action for away win
-            }
-            else
-            {
-                //do action for tie
-            }*/
         return true;
-            //do action that happens no matter how it ends
     }
     return false;
 }

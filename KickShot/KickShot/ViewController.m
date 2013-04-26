@@ -33,6 +33,7 @@
 
 - (void)viewDidLoad
 {
+    //loading the images for each card
     hPass = [UIImage imageNamed:@"Pass.jpg"];
     aPass = [UIImage imageNamed:@"Pass2.jpg"];
     
@@ -64,7 +65,6 @@
 }
 
 - (IBAction)PlayCardButton:(UIButton *)sender {
-    //MainLabel.text = @"Play Button Hit";
     [game playActive];
     [self updateGraphics];
     if(game.checkWin)
@@ -94,20 +94,17 @@
 }
 
 - (IBAction)SkipButton:(UIButton *)sender {
-    //MainLabel.text = @"Skip Button Hit";
     [game skipTurn];
     [self updateGraphics];
 }
 
 - (IBAction)SwipeRightGesture:(UISwipeGestureRecognizer *)sender {
-    //MainLabel.text = @"swipe right";
     if(game.activeCard > 0)
         game.activeCard--;
     [self updateGraphics];
 }
 
 - (IBAction)SwipeLeftGesture:(UISwipeGestureRecognizer *)sender {
-    //MainLabel.text = @"swipe left";
     if(game.activeCard < 6)
         game.activeCard++;
     [self updateGraphics];
@@ -160,6 +157,9 @@
 
 - (void) updateCards
 {
+    //in this card method all the call are looking at the cards in the deck
+    //when reimplementing the player hands simply change to look at hose istead
+    //of the decks which will actually simplify cases 4, 5, and 6
     int tempL, tempC, tempR;
     if(game.Player1Active)
     {
@@ -193,7 +193,6 @@
                     tempR = [game hDeck:5];
                 break;
             case 5:
-                NSLog(@"ther are how many in hDeck?: %d",game.hDeckRemaining);
                 tempL = [game hDeck:4];
                 if(game.oDeckRemaining>1)
                     tempC = [game oDeck:0];
@@ -211,7 +210,6 @@
                 }
                 break;
             case 6:
-                NSLog(@"ther are how many remaining?: %d",game.oDeckRemaining);
                 if(game.oDeckRemaining>1)
                     tempL = [game oDeck:0];
                 else
@@ -343,7 +341,6 @@
                     tempR = [game aDeck:5];
                 break;
             case 5:
-                NSLog(@"ther are how many in aDeck?: %d",game.aDeckRemaining);
                 tempL = [game aDeck:4];
                 if(game.oDeckRemaining>1)
                     tempC = [game oDeck:0];
@@ -361,7 +358,6 @@
                 }
                 break;
             case 6:
-                NSLog(@"ther are how many remaining?: %d",game.oDeckRemaining);
                 if(game.oDeckRemaining>1)
                     tempL = [game oDeck:0];
                 else

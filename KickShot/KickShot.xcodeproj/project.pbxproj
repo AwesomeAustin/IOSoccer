@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		D9040C5A17150E5900DFBC80 /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = D9040C5917150E5900DFBC80 /* Player.m */; };
+		D9889036172A029500CE9250 /* README in Resources */ = {isa = PBXBuildFile; fileRef = D9889035172A029500CE9250 /* README */; };
 		D98B8894171E5366000ACE79 /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = D98B8893171E5366000ACE79 /* Card.m */; };
 		D990C7ED171F50B000710B17 /* BicycleKick.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D990C7DA171F50B000710B17 /* BicycleKick.jpg */; };
 		D990C7EE171F50B000710B17 /* BicycleKick2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D990C7DB171F50B000710B17 /* BicycleKick2.jpg */; };
@@ -77,6 +78,7 @@
 /* Begin PBXFileReference section */
 		D9040C5817150E5900DFBC80 /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
 		D9040C5917150E5900DFBC80 /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Player.m; sourceTree = "<group>"; };
+		D9889035172A029500CE9250 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
 		D98B8892171E5366000ACE79 /* Card.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Card.h; path = ../Card.h; sourceTree = "<group>"; };
 		D98B8893171E5366000ACE79 /* Card.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Card.m; path = ../Card.m; sourceTree = "<group>"; };
 		D990C7DA171F50B000710B17 /* BicycleKick.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BicycleKick.jpg; sourceTree = "<group>"; };
@@ -214,6 +216,7 @@
 				D9040C5917150E5900DFBC80 /* Player.m */,
 				D99813AC172098340011D418 /* Game.h */,
 				D99813AD172098340011D418 /* Game.m */,
+				D9889035172A029500CE9250 /* README */,
 			);
 			path = KickShot;
 			sourceTree = "<group>";
@@ -396,6 +399,7 @@
 				D990C819171F50FB00710B17 /* WildCardRef.jpg in Resources */,
 				D990C81A171F50FB00710B17 /* WildCardAway.jpg in Resources */,
 				D990C81B171F50FB00710B17 /* WildCardHome.jpg in Resources */,
+				D9889036172A029500CE9250 /* README in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

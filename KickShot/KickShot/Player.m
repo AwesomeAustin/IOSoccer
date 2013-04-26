@@ -18,10 +18,6 @@
     if(self = [super init])
     {
         self.isHomeTeam = homeTeam;
-        /*Card*temp = [[Card alloc] initWithValue:pass type:offense];
-        [Hand addObject:temp];
-        NSLog(@"now there are %lu cards",(unsigned long)[Hand count]);
-        */
     }
     return self;
 }
@@ -79,10 +75,7 @@
     temp.value = aCard.value;
     temp.type = aCard.type;
     temp.team = aCard.team;
-    NSLog(@"card value %u",aCard.value);
-    NSLog(@"new card value %u",temp.value);
     [Hand addObject:temp];
-    NSLog(@"now has a hand of size %i",[Hand count]);
 }
 
 - (int) cardsRemaining
